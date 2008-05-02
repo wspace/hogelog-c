@@ -14,8 +14,8 @@ deps: $(SOURCES)
 wspace: $(OBJECTS)
 	gcc $(OBJECTS) $(CFLAGS) -o $@
 
-gencode.c: parsegen.pl wsparse.def
-	perl parsegen.pl wsparse.def >gencode.c
+gencode.c: parsegen.pl parse.def
+	perl parsegen.pl parse.def >gencode.c
 
 parse.o: parse.c gencode.c
 include deps
