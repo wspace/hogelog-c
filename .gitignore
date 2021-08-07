@@ -1,0 +1,5 @@
+wspace
+gencode.c
+*.o
+*.out
+*.exe
